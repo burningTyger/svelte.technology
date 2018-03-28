@@ -194,6 +194,22 @@ Also, if you wish, you can perform one level of array destructuring on the eleme
 }
 ```
 
+```html
+<h1>Cats and Dogs</h1>
+
+{{#each Object.entries(animals) as [animal, names]}}
+    <br/> {{animal}}: {{names.join(" and ")}}
+{{/each}}
+```
+
+```hidden-data
+{
+  "animals": {
+	"Cats": [ "Buzz", "Stella" ],
+  	"Dogs": [ "Hector", "Victoria" ]
+	}
+}
+```
 
 ### Await blocks
 
